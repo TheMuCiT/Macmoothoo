@@ -29,17 +29,6 @@ h1 {
   margin-bottom: 3px;
 }
 
-.h1Right {
-  font-weight: 600;
-  font-size: 40px;
-  color: var(--color-text-main);
-  text-align: right;
-  max-width: 582px;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 3px;
-}
-
 .introLeftTextMain {
   font-weight: 400;
   font-size: 20px;
@@ -88,11 +77,13 @@ h1 {
   display: flex;
 }
 
-.introLeftButton:hover {
+.introLeftButton:hover,
+.introLeftButtonSecond:hover {
   -webkit-transform: scale(1.05);
 }
 
-.introLeftButton:active {
+.introLeftButton:active,
+.introLeftButtonSecond:active {
   -webkit-transform: scale(1.08);
 }
 
@@ -143,9 +134,17 @@ h1 {
     align-items: center;
   }
 
+  .introLeftButtonSecond {
+    align-items: center;
+  }
+
   .introRightWrapper {
     position: relative;
     height: 600px;
+  }
+
+  .introRightBackgroundImage {
+    width: 80vw;
   }
 }
 
@@ -162,12 +161,22 @@ h1 {
     font-size: 18px;
   }
 
-  .introRightBackgroundImage {
-    width: 448px;
+  .introRightImage {
+    width: 350px;
+  }
+  .introLeftImage {
+    width: 280px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .introButtons {
+    flex-direction: column;
   }
 
-  .introRightImage {
-    width: 428px;
+  .introLeftButtonSecond {
+    margin-top: 20px;
+    margin-left: 0;
   }
 }
 

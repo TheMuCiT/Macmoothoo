@@ -20,7 +20,7 @@
 .footerMainRight {
   flex: 65%;
   display: grid;
-  margin-left: 100px;
+  margin-left: 120px;
   grid-template-columns: repeat(2, 1fr);
 }
 

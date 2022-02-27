@@ -15,7 +15,7 @@ const Preview = () => {
             one to one video sessions enable a deeper and more satisfying learning experience.
           </div>
           <div className='contactVid'>
-            <img src={vid} alt='' />
+            <img src={vid} alt='' className='contactVideo' />
           </div>
         </div>
       </div>

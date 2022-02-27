@@ -92,6 +92,14 @@ body {
   transform: translate(38%) rotate(180deg);
 }
 
+@media only screen and (max-width: 900px) {
+  .Line1,
+  .Line2,
+  .Line3 {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 670px) {
   .componentSecond {
     margin: 0 20px;

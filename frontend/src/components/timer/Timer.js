@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import './timer.css'
 
 const Timer = () => {
-  const countdownDate = new Date('Feb 28, 2022 22:00:00 GMT+00:00').getTime()
+  const countdownDate = new Date('May 24, 2022 00:00:00 GMT+10:00').getTime()
   const [
     {
       expired,

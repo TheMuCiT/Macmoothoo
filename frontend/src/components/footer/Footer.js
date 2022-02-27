@@ -10,17 +10,24 @@ import Logo from '../../images/Logo.png'
 
 import './footer.css'
 const Footer = () => {
-  const handleDiscord = () => {
-    window.open('')
+  const handleInstagram = () => {
+    window.open('https://instagram.com/enkiconnect?utm_medium=copy_link')
   }
 
   const handleTwitter = () => {
-    window.open('')
+    window.open('https://www.facebook.com/enkiconnect/')
   }
 
-  const handleM = () => {
-    window.open('')
+  const handleLinkedIn = () => {
+    window.open('https://www.linkedin.com/company/enkiconnect')
   }
+  const handlePinterest = () => {
+    window.open('https://pin.it/608tj9r')
+  }
+  const handleWhatsapp = () => {
+    window.open('https://api.whatsapp.com/send?phone=61482174702')
+  }
+
   return (
     <div className='footerBC componentFirst'>
       <div className='footerMain componentSecond'>
@@ -31,11 +38,11 @@ const Footer = () => {
           </div>
           <div className='footerMainLeftText'>Follow us with our social links</div>
           <div className='footerMainLeftLinks'>
-            <InstagramSVG className='footerIcon' onClick={handleM} />
+            <MailSVG className='footerIcon' onClick={handleWhatsapp} />
+            <YoutubeSVG className='footerIcon' onClick={handlePinterest} />
+            <InstagramSVG className='footerIcon' onClick={handleInstagram} />
             <TwitterSVG className='footerIcon' onClick={handleTwitter} />
-            <YoutubeSVG className='footerIcon' onClick={handleDiscord} />
-            <LinkedInSVG className='footerIcon' onClick={handleDiscord} />
-            <MailSVG className='footerIcon' onClick={handleDiscord} />
+            <LinkedInSVG className='footerIcon' onClick={handleLinkedIn} />
           </div>
           <div className='footerMainLeftCopy'>Ⓒ All Rights reserved 2021 EnkiConnect</div>
         </div>
@@ -43,8 +50,12 @@ const Footer = () => {
           <div className='footerMainRightItem'>
             <div className='footerMainRightItemTitle'>Follow us</div>
             <div className='footerMainRightItemText'>Facebook</div>
-            <div className='footerMainRightItemText'>Instagram</div>
-            <div className='footerMainRightItemText'>Twitter</div>
+            <div className='footerMainRightItemText' onClick={handleInstagram}>
+              Instagram
+            </div>
+            <div className='footerMainRightItemText' onClick={handleTwitter}>
+              Twitter
+            </div>
             <div className='footerMainRightItemText'>Youtube</div>
           </div>
           <div className='footerMainRightItem'>

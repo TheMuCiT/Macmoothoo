@@ -10,7 +10,7 @@ import './browse.css'
 const Browse = () => {
   return (
     <div className='componentFirst'>
-      <div className='intro componentSecond'>
+      <div className='intro browse componentSecond'>
         <div className='introRight SlideRightAnimation'>
           <div className='introRightWrapper'>
             <div className='introRightBackground'>

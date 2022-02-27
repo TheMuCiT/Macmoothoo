@@ -1,8 +1,10 @@
 .endImage {
   width: 100%;
   height: auto;
+  min-height: 500px;
   position: absolute;
   z-index: -1;
+  object-fit: cover;
 }
 
 .endBC {
@@ -49,4 +51,37 @@
   color: var(--color-text-main);
   cursor: pointer;
   margin-left: 30px;
+}
+
+.endButton:hover,
+.endButton2:hover {
+  -webkit-transform: scale(1.05);
+}
+
+.endButton:active,
+.endButton2:active {
+  -webkit-transform: scale(1.08);
+}
+
+@media only screen and (max-width: 1200px) {
+  .endTitle {
+    font-size: 48px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .endTitle {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .endTitle {
+    font-size: 28px;
+  }
+
+  .endButton2 {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
