@@ -66,6 +66,7 @@ const Footer = () => {
             <div className='footerMainRightItemText'>Support</div>
           </div>
         </div>
+
         <div className='footerMainLeftCopyMobile'>Ⓒ 2021 - TrustMarket all rights reserved</div>
       </div>
     </div>
