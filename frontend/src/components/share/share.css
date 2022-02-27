@@ -1,0 +1,14 @@
+.shareLeftImage {
+  position: absolute;
+  top: -80px;
+  left: 60%;
+  transform: translate(-50%);
+  z-index: 1;
+}
+.shareRightImage {
+  position: absolute;
+  top: 270px;
+  left: 23%;
+  transform: translate(-50%);
+  z-index: 2;
+}

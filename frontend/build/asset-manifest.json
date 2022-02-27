@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6e8e1d2e.chunk.css",
+    "main.js": "/static/js/main.0d44c5e6.chunk.js",
+    "main.js.map": "/static/js/main.0d44c5e6.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f5cfbed7.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f5cfbed7.js.map",
+    "static/js/2.d70ec5fc.chunk.js": "/static/js/2.d70ec5fc.chunk.js",
+    "static/js/2.d70ec5fc.chunk.js.map": "/static/js/2.d70ec5fc.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.6e8e1d2e.chunk.css.map": "/static/css/main.6e8e1d2e.chunk.css.map",
+    "static/js/2.d70ec5fc.chunk.js.LICENSE.txt": "/static/js/2.d70ec5fc.chunk.js.LICENSE.txt",
+    "static/media/Close.89539710.svg": "/static/media/Close.89539710.svg",
+    "static/media/IMG1.63e7efee.png": "/static/media/IMG1.63e7efee.png",
+    "static/media/IMG2.339b319d.png": "/static/media/IMG2.339b319d.png",
+    "static/media/IMG3.00af183f.png": "/static/media/IMG3.00af183f.png",
+    "static/media/IMG4.55d8d14e.png": "/static/media/IMG4.55d8d14e.png",
+    "static/media/IMG5.75f7a75a.png": "/static/media/IMG5.75f7a75a.png",
+    "static/media/IMG6.14cb97f9.png": "/static/media/IMG6.14cb97f9.png",
+    "static/media/IMG7.d380eb4f.png": "/static/media/IMG7.d380eb4f.png",
+    "static/media/Instagram.803ca2fd.svg": "/static/media/Instagram.803ca2fd.svg",
+    "static/media/Line.bc534f16.svg": "/static/media/Line.bc534f16.svg",
+    "static/media/LinkedIn.2d244839.svg": "/static/media/LinkedIn.2d244839.svg",
+    "static/media/Mail.a5421a23.svg": "/static/media/Mail.a5421a23.svg",
+    "static/media/MobileMenu.f9c217e7.svg": "/static/media/MobileMenu.f9c217e7.svg",
+    "static/media/Rectangle.8b25fe3d.svg": "/static/media/Rectangle.8b25fe3d.svg",
+    "static/media/Search.3ae3bee7.svg": "/static/media/Search.3ae3bee7.svg",
+    "static/media/Twitter.15bfc124.svg": "/static/media/Twitter.15bfc124.svg",
+    "static/media/VID.8dbbc965.png": "/static/media/VID.8dbbc965.png",
+    "static/media/Youtube.f8ccb70a.svg": "/static/media/Youtube.f8ccb70a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f5cfbed7.js",
+    "static/js/2.d70ec5fc.chunk.js",
+    "static/css/main.6e8e1d2e.chunk.css",
+    "static/js/main.0d44c5e6.chunk.js"
+  ]
+}

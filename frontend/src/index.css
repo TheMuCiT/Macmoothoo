@@ -1,70 +1,108 @@
 :root {
-     /*COLOR*/
-     --color-background: red;
-     --color-navbar: red;
+  /*COLOR*/
+  --color-background: #1b2125;
+  --color-navbar: #1b2125;
 
-     --color-main: red;
-     --color-main-second: red;
-     --color-white: #ffffff;
-     --color-box: red;
+  --color-main: #3f6ff9;
+  --color-main-second: #272f34;
+  --color-white: #ffffff;
+  --color-box: #000000;
 
-     --color-text-main: orange;
-     --color-text-second: orange;
-     --color-text-title: orange;
+  --color-text-main: #ffffff;
+  --color-text-second: #3f6ff9;
+  --color-text-title: orange;
 
-     /*SIZE*/
-     ---main-padding: 0px;
+  /*SIZE*/
+  ---main-padding: 0px;
 
-     ---border-radius: 0px;
-     ---border-radius-button: 0px;
-     ---border-radius-small: 0px;
+  ---border-radius: 0px;
+  ---border-radius-button: 0px;
+  ---border-radius-small: 0px;
 
-     ---navbar-height: 100px;
+  ---navbar-height: 100px;
 }
 
 body {
-     margin: 0;
-     padding: 0;
-     font-family: 'Poppins', sans-serif;
-     -webkit-font-smoothing: antialiased;
-     -moz-osx-font-smoothing: grayscale;
-     background-color: #18191a;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #18191a;
 }
 
 .main {
-     margin-bottom: 200px;
+  margin-bottom: 0px;
 }
 
 .red {
-     background-color: red;
+  background-color: red;
 }
 
 .componentFirst {
-     display: flex;
-     justify-content: center;
-     margin-top: 100px;
-     position: relative;
-     overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  position: relative;
+  overflow: hidden;
 }
 
 .componentSecond {
-     width: 100%;
-     max-width: 1450px;
-     display: flex;
-     margin: 0 50px;
+  width: 100%;
+  max-width: 1250px;
+  display: flex;
+  margin: 0 50px;
+}
+
+.componentSecondMain {
+  width: 100%;
+  max-width: 1250px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
+}
+.elapse {
+  width: 2500px;
+  height: 2500px;
+  position: absolute;
+  left: 50%;
+  background: transparent radial-gradient(closest-side at 50% 50%, #3f6ff961 0%, #3f6ff938 47%, #3f6ff900 100%) 0%
+    0% no-repeat padding-box;
+  z-index: 999;
+}
+
+.Line1 {
+  position: absolute;
+  right: 0;
+  top: 400px;
+  transform: translate(38%) rotate(180deg);
+}
+
+.Line2 {
+  position: absolute;
+  left: 0;
+  top: 2130px;
+  transform: translate(-38%);
+}
+
+.Line3 {
+  position: absolute;
+  right: 0;
+  top: 2950px;
+  transform: translate(38%) rotate(180deg);
 }
 
 @media only screen and (max-width: 670px) {
-     .componentSecond {
-          margin: 0 20px;
-     }
-     .main {
-          margin-bottom: 100px;
-     }
+  .componentSecond {
+    margin: 0 20px;
+  }
+  .main {
+    margin-bottom: 100px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
-     .componentSecond {
-          margin: 0 10px;
-     }
+  .componentSecond {
+    margin: 0 10px;
+  }
 }
