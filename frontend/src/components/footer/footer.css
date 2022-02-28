@@ -1,6 +1,7 @@
 .footerBC {
-  background-color: var(--color-navbar);
+  background-color: transparent;
   margin-top: 0;
+  z-index: 200;
 }
 
 .footerMain {

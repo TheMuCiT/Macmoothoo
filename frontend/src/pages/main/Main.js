@@ -11,6 +11,7 @@ import Share from '../../components/share/Share'
 import Timer from '../../components/timer/Timer'
 
 import './main.css'
+import Footer from '../../components/footer/Footer'
 
 const Main = () => {
   return (
@@ -29,7 +30,7 @@ const Main = () => {
         </div>
       </div>
       <End />
-
+      <Footer />
       <Animation />
     </div>
   )

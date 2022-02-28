@@ -1,0 +1,149 @@
+.faqMain {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
+  z-index: 200;
+}
+
+.FAQ {
+  margin-top: 54px;
+  width: 100%;
+  padding: 40px 50px;
+  border-radius: 16px;
+  z-index: 200;
+}
+
+.FAQTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.FAQTitleLeft {
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.FAQTitleRight {
+  color: var(--color-main);
+  font-size: 18px;
+  font-weight: 600;
+  font-style: italic;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.FAQItem {
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.FAQItemHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-main-second);
+  padding: 20px 40px;
+  border-radius: 12px;
+}
+
+.FAQItemHeaderText {
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 29px;
+}
+
+.FAQItemHeaderArrowSVG {
+  transform: rotateZ(0deg);
+  width: 18px;
+}
+
+.FAQItemHeaderArrowSVGHover {
+  transform: rotateZ(+90deg);
+  width: 18px;
+}
+
+.FAQItemContext {
+  padding: 30px 40px;
+}
+
+.FAQItemContextStep {
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin-top: 20px;
+}
+
+.FAQItemContextTitle {
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 29px;
+  margin: 20px 0;
+}
+
+.FAQItemContextText {
+  color: var(--color-text-second);
+  font-size: 400px;
+  font-size: 24px;
+  max-width: 1180px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .FAQ {
+    padding: 40px 20px;
+  }
+
+  .FAQItemHeaderText {
+    font-size: 24px;
+  }
+
+  .FAQItemContextStep {
+    font-size: 20px;
+  }
+
+  .FAQItemContextTitle {
+    font-size: 24px;
+  }
+
+  .FAQItemContextText {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .FAQTitle {
+    padding: 0 5px;
+  }
+  .FAQ {
+    padding: 40px 15px;
+  }
+
+  .FAQItemHeaderText {
+    font-size: 22px;
+  }
+
+  .FAQItemContextStep {
+    font-size: 18px;
+  }
+
+  .FAQItemContextTitle {
+    font-size: 22px;
+  }
+
+  .FAQItemContextText {
+    font-size: 18px;
+  }
+}

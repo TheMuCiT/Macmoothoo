@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import { ReactComponent as MobileMenu } from '../../icons/MobileMenu.svg'
 import { ReactComponent as Close } from '../../icons/Close.svg'
@@ -33,8 +34,8 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className='navbarMobileButton' onClick={HandleMobileMenu}>
-        <MobileMenu className={Mobile ? 'Mobile' : 'Mobile'} />
+      <div className='navbarMobileButton'>
+        <MobileMenu className={Mobile ? 'Mobile' : 'Mobile'} onClick={HandleMobileMenu} />
         <div className={Mobile ? 'navbarMobileContainerActive' : 'navbarMobileContainer'}>
           <div className={Mobile ? 'navbarMenu active' : 'navbarMenu'}>
             <div className='navbarMenuContainer'>
@@ -47,10 +48,18 @@ const Navbar = () => {
                 </div>
               </div>
               <div className='navbarMobileMain'>
-                <div className='navbarCenterLink opacity7'>Blog</div>
-                <div className='navbarCenterLink opacity7'>About</div>
-                <div className='navbarCenterLink opacity7'>FAQ</div>
-                <div className='navbarCenterLink opacity7'>Skills</div>
+                <Link to='/Blog' className='navbarCenterLink opacity7' onClick={HandleMobileMenu}>
+                  Blog
+                </Link>
+                <Link to='/About' className='navbarCenterLink opacity7' onClick={HandleMobileMenu}>
+                  About
+                </Link>
+                <Link to='/FAQ' className='navbarCenterLink opacity7' onClick={HandleMobileMenu}>
+                  FAQ
+                </Link>
+                <Link to='/Skills' className='navbarCenterLink opacity7' onClick={HandleMobileMenu}>
+                  Skills
+                </Link>
                 <div className='navbarCenterLink navbarRightButton'>Join Now</div>
               </div>
             </div>
@@ -60,15 +69,23 @@ const Navbar = () => {
 
       <div className='navbarContainer SlideRightAnimation'>
         <div className='navbarLeft'>
-          <div className='navbarLeftLogo '>
+          <Link to='/' className='navbarLeftLogo '>
             <img src={Logo} alt='enki connect' className='navbarLogo' />
-          </div>
+          </Link>
         </div>
         <div className='navbarCenter'>
-          <div className='navbarCenterItem'>Blog</div>
-          <div className='navbarCenterItem'>About</div>
-          <div className='navbarCenterItem'>FAQ</div>
-          <div className='navbarCenterItem'>Skills</div>
+          <Link to='/Blog' className='navbarCenterItem'>
+            Blog
+          </Link>
+          <Link to='/About' className='navbarCenterItem'>
+            About
+          </Link>
+          <Link to='/FAQ' className='navbarCenterItem'>
+            FAQ
+          </Link>
+          <Link to='/Skills' className='navbarCenterItem'>
+            Skills
+          </Link>
         </div>
         <div className='navbarRight'>
           <div className='navbarRightItem'>

@@ -28,7 +28,7 @@ body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #18191a;
+  background-color: #1b2125;
 }
 
 .main {
@@ -42,7 +42,7 @@ body {
 .componentFirst {
   display: flex;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 0;
   position: relative;
   overflow: hidden;
 }
@@ -68,34 +68,40 @@ body {
   left: 50%;
   background: transparent radial-gradient(closest-side at 50% 50%, #3f6ff961 0%, #3f6ff938 47%, #3f6ff900 100%) 0%
     0% no-repeat padding-box;
-  z-index: 999;
+  z-index: 100;
 }
 
 .Line1 {
   position: absolute;
   right: 0;
-  top: 400px;
+  top: 300px;
   transform: translate(38%) rotate(180deg);
 }
 
 .Line2 {
   position: absolute;
   left: 0;
-  top: 2130px;
+  top: 2030px;
   transform: translate(-38%);
 }
 
 .Line3 {
   position: absolute;
   right: 0;
-  top: 2950px;
+  top: 2550px;
   transform: translate(38%) rotate(180deg);
+}
+.none {
+  display: none;
 }
 
 @media only screen and (max-width: 900px) {
   .Line1,
   .Line2,
   .Line3 {
+    display: none;
+  }
+  .elapse {
     display: none;
   }
 }
