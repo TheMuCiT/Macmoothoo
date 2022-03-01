@@ -34,7 +34,7 @@ const Footer = () => {
         <div className='footerMainLeft'>
           <div className='footerMainLeftLogo'>
             <img src={Logo} alt='' />
-            EnkiConnect
+            Learn, Share & Earn
           </div>
           <div className='footerMainLeftText'>Follow us with our social links</div>
           <div className='footerMainLeftLinks'>
@@ -44,7 +44,7 @@ const Footer = () => {
             <TwitterSVG className='footerIcon' onClick={handleTwitter} />
             <LinkedInSVG className='footerIcon' onClick={handleLinkedIn} />
           </div>
-          <div className='footerMainLeftCopy'>Ⓒ All Rights reserved 2021 EnkiConnect</div>
+          <div className='footerMainLeftCopy'>Ⓒ All Rights reserved 2021 Enki Connect Pty Ltd</div>
         </div>
         <div className='footerMainRight'>
           <div className='footerMainRightItem'>

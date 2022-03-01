@@ -28,7 +28,7 @@ a {
   justify-content: center;
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 400px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -60,7 +60,7 @@ a {
   padding: 0;
   position: absolute;
   transform: translateX(-50%);
-  width: 6750px;
+  width: 13950px;
 }
 /*width:(slide_count+0.5)*(Slide_width)*2*/
 /*slide_width 500*/
@@ -72,7 +72,7 @@ a {
   top: 0px;
   transition: all 0.3s;
   width: 400px;
-  height: 300px;
+  height: 400px;
   margin: 20px;
 }
 
@@ -83,7 +83,7 @@ a {
   background-color: var(--color-background);
   border-radius: 12px;
   width: 400px;
-  height: 250px;
+  height: 350px;
 }
 
 .carousel__btn {
@@ -94,49 +94,20 @@ a {
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 105%;
+  top: 0%;
   transform: translateY(-50%);
   -webkit-tap-highlight-color: transparent;
 }
 
-.carousel__dots {
-  display: inline-block;
-  left: 50%;
-  margin-top: 1rem;
-  position: absolute;
-  transform: translateX(-50%);
-  margin-top: 500px;
-  width: 70vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.carousel__dots .dot {
-  background: rgba(196, 196, 196, 0.64);
-  border: 0;
-  cursor: pointer;
-  margin: 0 6px;
-  outline: none;
-  width: 45px;
-  height: 6px;
-  border-radius: 2px;
-}
-.carousel__dots .dot.active {
-  background: #ffffff;
-  width: 55px;
-  height: 10px;
-  border-radius: 8px;
-}
-
 .carousel__btn--prev {
-  left: -3rem;
+  right: 95%;
   z-index: 999;
 }
 
 .carousel__btn--next {
-  right: -3rem;
+  left: 95%;
+  z-index: 999;
 }
-
 .carousel__btn-arrow--left:hover {
   transform: scale(1.2) rotate(-180deg);
 }
@@ -172,12 +143,13 @@ a {
 .skillPressed {
   background-color: #272f34;
   width: 100%;
-  height: 85%;
+  height: 88%;
   border-radius: 12px;
 }
 
 .skillTitleNO {
   margin-bottom: -10px;
+  justify-content: space-between;
 }
 
 .skillArrow {
@@ -186,13 +158,29 @@ a {
   margin-right: 20px;
 }
 
-@media only screen and (max-width: 1600px) {
+.skillTextSub {
+  margin-top: 10px;
+}
+
+.skillTextLearn {
+  margin-top: 10px;
+}
+
+.skillTextOpen {
+  font-size: 20px;
+}
+
+.skillItem {
+  height: 310px;
+}
+
+@media only screen and (max-width: 1550px) {
   .carousel__btn--prev {
-    left: 1rem;
+    right: 95vw;
   }
 
   .carousel__btn--next {
-    right: 1rem;
+    left: 95vw;
   }
 }
 
@@ -218,21 +206,21 @@ a {
     width: 100%;
   }
   .carousel__btn--prev {
-    left: 4rem;
+    opacity: 0.5;
   }
 
   .carousel__btn--next {
-    right: 4rem;
+    opacity: 0.5;
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1250px) {
   .carousel__btn--prev {
-    left: 0;
+    right: 105vw;
   }
 
   .carousel__btn--next {
-    right: 0;
+    left: 105vw;
   }
 }
 
@@ -249,63 +237,161 @@ a {
   .headerLeftText {
     font-size: 18px;
   }
-}
 
-@media only screen and (max-width: 1000px) {
   .carousel__btn--prev {
-    left: 2rem;
+    right: 115vw;
   }
 
   .carousel__btn--next {
-    right: 2rem;
-  }
-
-  .carousel__btn {
-    opacity: 0.7;
+    left: 115vw;
   }
 }
 
+@media only screen and (max-width: 950px) {
+  .carousel__btn--prev {
+    right: 125vw;
+  }
+
+  .carousel__btn--next {
+    left: 125vw;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .carousel__btn--prev {
+    right: 135vw;
+  }
+
+  .carousel__btn--next {
+    left: 135vw;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .carousel__btn--prev {
+    right: 145vw;
+  }
+
+  .carousel__btn--next {
+    left: 145vw;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .skillItem {
+    width: 352px;
+  }
+  .carousel__btn--prev {
+    right: 155vw;
+  }
+
+  .carousel__btn--next {
+    left: 155vw;
+  }
+}
 @media only screen and (max-width: 600px) {
-  .headerLeft {
-    padding: 0 10px;
-  }
-
-  .headerLeftButtonWrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .carousel__btn--prev {
-    left: 1rem;
-  }
-
-  .carousel__btn--next {
-    right: 1rem;
-  }
   .carousel__slide-item {
-    width: 220px;
-    height: 220px;
+    width: 350px;
   }
   .carousel__slide-item img {
-    width: 200px;
-    height: 200px;
+    width: 280px;
+    object-fit: cover;
   }
   .carousel__slide-list {
-    width: 3340px;
+    width: 9355px;
   }
-  .carousel__wrap {
-    height: 250px;
-  }
-  .carousel__dots {
-    margin-top: 350px;
-  }
-  .ingameCarousel {
-    height: 450px;
+  .skillItem {
+    width: 250px;
   }
 
-  .carousel__btn {
-    top: 50%;
+  .carousel__btn--prev {
+    right: 165vw;
+  }
+
+  .carousel__btn--next {
+    left: 165vw;
+  }
+
+  .skillPressed {
+    width: 280px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .carousel__btn--prev {
+    right: 180vw;
+  }
+
+  .carousel__btn--next {
+    left: 180vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .carousel__btn--prev {
+    right: 195vw;
+  }
+
+  .carousel__btn--next {
+    left: 195vw;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .carousel__btn--prev {
+    right: 210vw;
+  }
+
+  .carousel__btn--next {
+    left: 210vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .carousel__btn--prev {
+    right: 230vw;
+  }
+
+  .carousel__btn--next {
+    left: 230vw;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .carousel__btn--prev {
+    right: 240vw;
+  }
+
+  .carousel__btn--next {
+    left: 240vw;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .carousel__btn--prev {
+    right: 255vw;
+  }
+
+  .carousel__btn--next {
+    left: 255vw;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .carousel__btn--prev {
+    right: 270vw;
+  }
+
+  .carousel__btn--next {
+    left: 270vw;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .carousel__btn--prev {
+    right: 285vw;
+  }
+
+  .carousel__btn--next {
+    left: 285vw;
   }
 }
