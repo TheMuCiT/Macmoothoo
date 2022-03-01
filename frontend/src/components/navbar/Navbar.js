@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 import { ReactComponent as MobileMenu } from '../../icons/MobileMenu.svg'
 import { ReactComponent as Close } from '../../icons/Close.svg'
-import { ReactComponent as Search } from '../../icons/Search.svg'
 
 import Logo from '../../images/Logo.png'
 
