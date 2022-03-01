@@ -12,7 +12,7 @@ const Browse = () => {
     <div className='componentFirst'>
       <div className='intro browse componentSecond'>
         <div className='introRight SlideRightAnimation'>
-          <div className='introRightWrapper'>
+          <div className='introRightWrapper shareWrapper'>
             <div className='introRightBackground'>
               <Rectangle className='introRightBackgroundImage' />
             </div>
