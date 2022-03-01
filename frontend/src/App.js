@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom'
 import Navbar from './components/navbar/Navbar'
 
 import Main from './pages/main/Main'
@@ -19,6 +19,7 @@ const App = () => {
         <Route exact path='/About' component={About} />
         <Route exact path='/FAQ' component={FAQ} />
         <Route exact path='/Skills' component={Skills} />
+        <Redirect to='/' />
       </Switch>
     </Router>
   )
