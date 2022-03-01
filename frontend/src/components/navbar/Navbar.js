@@ -88,9 +88,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className='navbarRight'>
-          <div className='navbarRightItem'>
-            <Search />
-          </div>
+          <div className='navbarRightItem'>{/*<Search />*/}</div>
           <div className='navbarRightButton'>Join Now</div>
         </div>
       </div>

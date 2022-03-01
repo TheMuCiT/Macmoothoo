@@ -9,7 +9,7 @@ import { ReactComponent as MailSVG } from '../../icons/Mail.svg'
 import Logo from '../../images/Logo.png'
 
 import './footer.css'
-const Footer = () => {
+const Footer = ({ history }) => {
   const handleInstagram = () => {
     window.open('https://instagram.com/enkiconnect?utm_medium=copy_link')
   }
@@ -26,6 +26,10 @@ const Footer = () => {
   }
   const handleWhatsapp = () => {
     window.open('https://api.whatsapp.com/send?phone=61482174702')
+  }
+
+  const handleToFAQ = () => {
+    window.open('/FAQ', '_self')
   }
 
   return (
@@ -65,7 +69,9 @@ const Footer = () => {
           <div className='footerMainRightItem'>
             <div className='footerMainRightItemTitle'>Legal</div>
             <div className='footerMainRightItemText'>Terms</div>
-            <div className='footerMainRightItemText'>FAQ's</div>
+            <div className='footerMainRightItemText' onClick={handleToFAQ}>
+              FAQ's
+            </div>
             <div className='footerMainRightItemText'>Privacy</div>
             <div className='footerMainRightItemText'>Support</div>
           </div>
