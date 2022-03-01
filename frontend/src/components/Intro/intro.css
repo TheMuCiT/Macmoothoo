@@ -113,6 +113,10 @@ h1 {
   color: var(--color-text-second);
 }
 
+.introTimer {
+  display: none;
+}
+
 @media only screen and (max-width: 1200px) {
   .intro {
     flex-direction: column-reverse;
@@ -140,11 +144,16 @@ h1 {
 
   .introRightWrapper {
     position: relative;
-    height: 600px;
+    height: 500px;
   }
 
   .introRightBackgroundImage {
     width: 80vw;
+  }
+
+  .introTimer {
+    display: block;
+    margin-bottom: 40px;
   }
 }
 

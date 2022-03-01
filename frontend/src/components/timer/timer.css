@@ -52,6 +52,11 @@
   line-height: 100px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .timer {
+    display: none;
+  }
+}
 @media only screen and (max-width: 1100px) {
   .timerTitle {
     font-size: 36px;
