@@ -49,14 +49,18 @@ const Footer = () => {
         <div className='footerMainRight'>
           <div className='footerMainRightItem'>
             <div className='footerMainRightItemTitle'>Follow us</div>
-            <div className='footerMainRightItemText'>Facebook</div>
+            <div className='footerMainRightItemText' onClick={handlePinterest}>
+              Pinterest
+            </div>
             <div className='footerMainRightItemText' onClick={handleInstagram}>
               Instagram
             </div>
             <div className='footerMainRightItemText' onClick={handleTwitter}>
               Twitter
             </div>
-            <div className='footerMainRightItemText'>Youtube</div>
+            <div className='footerMainRightItemText' onClick={handleWhatsapp}>
+              Whatsapp
+            </div>
           </div>
           <div className='footerMainRightItem'>
             <div className='footerMainRightItemTitle'>Legal</div>

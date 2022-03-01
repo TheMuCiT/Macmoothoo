@@ -66,6 +66,7 @@
 .FAQItemHeaderArrowSVG {
   transform: rotateZ(0deg);
   width: 18px;
+  margin-left: 10px;
 }
 
 .FAQItemHeaderArrowSVGHover {
@@ -95,10 +96,14 @@
 }
 
 .FAQItemContextText {
-  color: var(--color-text-second);
-  font-size: 400px;
+  color: white;
+  font-size: 300px;
   font-size: 24px;
   max-width: 1180px;
+}
+
+.FAQGap {
+  height: 20px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -107,7 +112,7 @@
   }
 
   .FAQItemHeaderText {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .FAQItemContextStep {
@@ -123,6 +128,19 @@
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .faqMain {
+    margin: 0 10px;
+  }
+  .faq {
+    margin: 0 10px;
+  }
+
+  .FAQItemContext {
+    padding: 30px 10px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .FAQTitle {
     padding: 0 5px;
@@ -132,7 +150,7 @@
   }
 
   .FAQItemHeaderText {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .FAQItemContextStep {

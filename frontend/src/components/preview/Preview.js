@@ -1,6 +1,6 @@
 import React from 'react'
 
-import vid from '../../images/VID.png'
+import videoFile from '../../video/video.mp4'
 
 import './preview.css'
 
@@ -14,8 +14,10 @@ const Preview = () => {
             Our innovative application allows you to Learn, Share and Earn anywhere and anytime. Our interactive
             one to one video sessions enable a deeper and more satisfying learning experience.
           </div>
-          <div className='contactVid'>
-            <img src={vid} alt='' className='contactVideo' />
+          <div>
+            <video width='100%' controls className='contactVid'>
+              <source src={videoFile} type='video/mp4' />
+            </video>
           </div>
         </div>
       </div>

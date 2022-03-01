@@ -68,13 +68,14 @@ body {
   left: 50%;
   background: transparent radial-gradient(closest-side at 50% 50%, #3f6ff961 0%, #3f6ff938 47%, #3f6ff900 100%) 0%
     0% no-repeat padding-box;
-  z-index: 100;
+  z-index: -100;
 }
 
 .Line1 {
   position: absolute;
   right: 0;
   top: 300px;
+  z-index: -10;
   transform: translate(38%) rotate(180deg);
 }
 

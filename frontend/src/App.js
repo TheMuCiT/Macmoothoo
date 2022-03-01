@@ -6,6 +6,8 @@ import Navbar from './components/navbar/Navbar'
 import Main from './pages/main/Main'
 import Blog from './pages/blog/Blog'
 import FAQ from './pages/faq/FAQ'
+import About from './pages/about/About'
+import Skills from './pages/skills/Skills'
 
 const App = () => {
   return (
@@ -14,9 +16,9 @@ const App = () => {
       <Switch>
         <Route exact path='/' component={Main} />
         <Route exact path='/Blog' component={Blog} />
-        <Route exact path='/About' component={Main} />
+        <Route exact path='/About' component={About} />
         <Route exact path='/FAQ' component={FAQ} />
-        <Route exact path='/Skills' component={Main} />
+        <Route exact path='/Skills' component={Skills} />
       </Switch>
     </Router>
   )

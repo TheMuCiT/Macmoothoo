@@ -39,6 +39,11 @@
   width: 100%;
 }
 
+.contactVid {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
 @media only screen and (max-width: 1100px) {
   .contactText {
     max-width: 80vw;
