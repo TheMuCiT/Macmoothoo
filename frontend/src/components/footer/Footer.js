@@ -40,6 +40,10 @@ const Footer = ({ history }) => {
     window.open('/Privacy', '_self')
   }
 
+  const handleSupport = () => {
+    window.open('mailto::enkiconnect_board_1651812700_b1ac2038443bc270e6b1__23995924@use1.mx.monday.com')
+  }
+
   return (
     <div className='footerBC componentFirst'>
       <div className='footerMain componentSecond'>
@@ -85,7 +89,9 @@ const Footer = ({ history }) => {
             <div className='footerMainRightItemText' onClick={handlePrivacy}>
               Privacy
             </div>
-            <div className='footerMainRightItemText'>Support</div>
+            <div className='footerMainRightItemText' onClick={handleSupport}>
+              Support
+            </div>
           </div>
         </div>
 

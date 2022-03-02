@@ -33,7 +33,6 @@ const Intro = () => {
     <div className='componentFirst'>
       <div className='intro componentSecond'>
         <div className='introLeft SlideLeftAnimation'>
-          <div className='introLeftTextMain'>Designed by Fans, for Fans</div>
           <h1>
             <span className='introTextMain'>Powerful </span>and
             <span className='introTextMain'> Personalised </span>

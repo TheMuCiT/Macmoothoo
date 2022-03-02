@@ -1,4 +1,5 @@
-import React from 'react'
+import { useLocation } from 'react-router-dom'
+import React, { useEffect } from 'react'
 import Footer from '../../components/footer/Footer'
 
 import { ReactComponent as ShareSVG } from '../../icons/Share.svg'
@@ -7,8 +8,6 @@ import { ReactComponent as Line } from '../../icons/Line.svg'
 
 import image8 from '../../images/IMG8.png'
 import image9 from '../../images/IMG9.png'
-import image10 from '../../images/IMG10.png'
-import image11 from '../../images/IMG11.png'
 import image12 from '../../images/IMG12.png'
 import image13 from '../../images/IMG13.png'
 import image14 from '../../images/IMG14.png'
@@ -40,9 +39,20 @@ const blog = [
 ]
 
 const Blog = ({ history }) => {
-  const handleSkills = () => {
-    history.push('/Skills')
+  const { pathname } = useLocation()
+  const handleSkills = (id) => {
+    history.push({
+      pathname: `/Blog/${id}`,
+      state: {
+        id: id,
+      },
+    })
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
   return (
     <div className='componentFirst'>
       <div className='faqMain'>
@@ -55,14 +65,14 @@ const Blog = ({ history }) => {
                   <div className='blogBig'>
                     <img src={image8} alt='' className='contactVid' />
                   </div>
-                  <div className='blogTitle'>How is your learning program different? Unique elements of...</div>
+                  <div className='blogTitle'>We are launching</div>
                   <div className='blogText'>
-                    Remember outweigh do he desirous no cheerful. Do of doors water ye guest. We if prosperous
-                    comparison middletons at. Park we in lose like at no. An so to preferred convinced distrusts he
-                    determine. In musical me my placing clothes comfort pleased hearing. Any residence you
-                    satisfied and rapturous certainty two.
+                    Humans are curious, and learning new things is in their nature. In today's fast-paced world, we
+                    would be interested in learning hundreds of skills. However, what happens when we get the time
+                    to learn those skills? Unfortunately, most of us do not find a reliable platform to find
+                    engaging courses that can teach us the skills we are interested in learning.
                   </div>
-                  <div className='blogButton' onClick={handleSkills}>
+                  <div className='blogButton' onClick={() => handleSkills(0)}>
                     Read more
                   </div>
                 </div>
@@ -75,38 +85,38 @@ const Blog = ({ history }) => {
                       </div>
                     </div>
                     <div className='infoBarItemTextContainer'>
-                      <div className='infoBarItemText'>{blog[0].title.split('').slice(0, 28)}</div>
-                      <div className='infoBarItemTextLearn' onClick={handleSkills}>
+                      <div className='infoBarItemText blogTextSmaller'>{blog[0].title}</div>
+                      <div className='infoBarItemTextLearn' onClick={() => handleSkills(1)}>
                         Learn more
                         <ArrowRightSVG className='BlogArrowRight' />
                       </div>
                     </div>
                   </div>
                   <div className='infoBarItem'>
-                    <img src={image10} alt='' className='blogBCImage' />
+                    <img src={image12} alt='' className='blogBCImage' />
                     <div className='infoBarItemTitle'>
                       <div className='infoBarItemTitleBox'>
                         <ShareSVG />
                       </div>
                     </div>
                     <div className='infoBarItemTextContainer'>
-                      <div className='infoBarItemText'>{blog[1].title.split('').slice(0, 28)}</div>
-                      <div className='infoBarItemTextLearn' onClick={handleSkills}>
+                      <div className='infoBarItemText blogTextSmaller'>{blog[1].title}</div>
+                      <div className='infoBarItemTextLearn' onClick={() => handleSkills(2)}>
                         Learn more
                         <ArrowRightSVG className='BlogArrowRight' />
                       </div>
                     </div>
                   </div>
                   <div className='infoBarItem'>
-                    <img src={image11} alt='' className='blogBCImage' />
+                    <img src={image13} alt='' className='blogBCImage' />
                     <div className='infoBarItemTitle'>
                       <div className='infoBarItemTitleBox'>
                         <ShareSVG />
                       </div>
                     </div>
                     <div className='infoBarItemTextContainer'>
-                      <div className='infoBarItemText'>{blog[2].title.split('').slice(0, 28)}</div>
-                      <div className='infoBarItemTextLearn' onClick={handleSkills}>
+                      <div className='infoBarItemText blogTextSmaller'>{blog[2].title}</div>
+                      <div className='infoBarItemTextLearn' onClick={() => handleSkills(3)}>
                         Learn more
                         <ArrowRightSVG className='BlogArrowRight' />
                       </div>
@@ -123,8 +133,8 @@ const Blog = ({ history }) => {
                     </div>
                   </div>
                   <div className='infoBarItemTextContainer'>
-                    <div className='infoBarItemText'>{blog[0].title.split('').slice(0, 28)}</div>
-                    <div className='infoBarItemTextLearn' onClick={handleSkills}>
+                    <div className='infoBarItemText blogTextSmaller'>{blog[0].title}</div>
+                    <div className='infoBarItemTextLearn' onClick={() => handleSkills(1)}>
                       Learn more
                       <ArrowRightSVG className='BlogArrowRight' />
                     </div>
@@ -138,8 +148,8 @@ const Blog = ({ history }) => {
                     </div>
                   </div>
                   <div className='infoBarItemTextContainer'>
-                    <div className='infoBarItemText'>{blog[1].title.split('').slice(0, 28)}</div>
-                    <div className='infoBarItemTextLearn' onClick={handleSkills}>
+                    <div className='infoBarItemText blogTextSmaller'>{blog[1].title}</div>
+                    <div className='infoBarItemTextLearn' onClick={() => handleSkills(2)}>
                       Learn more
                       <ArrowRightSVG className='BlogArrowRight' />
                     </div>
@@ -153,8 +163,8 @@ const Blog = ({ history }) => {
                     </div>
                   </div>
                   <div className='infoBarItemTextContainer'>
-                    <div className='infoBarItemText'>{blog[2].title.split('').slice(0, 28)}</div>
-                    <div className='infoBarItemTextLearn' onClick={handleSkills}>
+                    <div className='infoBarItemText blogTextSmaller'>{blog[2].title}</div>
+                    <div className='infoBarItemTextLearn' onClick={() => handleSkills(3)}>
                       Learn more
                       <ArrowRightSVG className='BlogArrowRight' />
                     </div>
@@ -170,8 +180,8 @@ const Blog = ({ history }) => {
                     </div>
                   </div>
                   <div className='infoBarItemTextContainer'>
-                    <div className='infoBarItemText'>{blog[3].title.split('').slice(0, 28)}</div>
-                    <div className='infoBarItemTextLearn' onClick={handleSkills}>
+                    <div className='infoBarItemText blogTextSmaller'>{blog[3].title}</div>
+                    <div className='infoBarItemTextLearn' onClick={() => handleSkills(4)}>
                       Learn more
                       <ArrowRightSVG className='BlogArrowRight' />
                     </div>
@@ -185,8 +195,8 @@ const Blog = ({ history }) => {
                     </div>
                   </div>
                   <div className='infoBarItemTextContainer'>
-                    <div className='infoBarItemText'>{blog[4].title.split('').slice(0, 28)}</div>
-                    <div className='infoBarItemTextLearn' onClick={handleSkills}>
+                    <div className='infoBarItemText blogTextSmaller'>{blog[4].title}</div>
+                    <div className='infoBarItemTextLearn' onClick={() => handleSkills(5)}>
                       Learn more
                       <ArrowRightSVG className='BlogArrowRight' />
                     </div>
@@ -200,8 +210,8 @@ const Blog = ({ history }) => {
                     </div>
                   </div>
                   <div className='infoBarItemTextContainer'>
-                    <div className='infoBarItemText'>{blog[5].title.split('').slice(0, 28)}</div>
-                    <div className='infoBarItemTextLearn' onClick={handleSkills}>
+                    <div className='infoBarItemText blogTextSmaller'>{blog[5].title}</div>
+                    <div className='infoBarItemTextLearn' onClick={() => handleSkills(6)}>
                       Learn more
                       <ArrowRightSVG className='BlogArrowRight' />
                     </div>
