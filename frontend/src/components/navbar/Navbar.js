@@ -23,12 +23,16 @@ const Navbar = () => {
     }
   }
 
+  const HandleHome = () => {
+    window.open('/', '_self')
+  }
+
   window.addEventListener('resize', WindowChange)
   return (
     <div className='navbar'>
       <div className='navbarMobile'>
         <div className='navbarCenterIcon'>
-          <div className='navbarMobileTopRight '>
+          <div className='navbarMobileTopRight ' onClick={HandleHome}>
             <img src={Logo} alt='enki connect' className='navbarLogo' />
           </div>
         </div>
@@ -39,7 +43,7 @@ const Navbar = () => {
           <div className={Mobile ? 'navbarMenu active' : 'navbarMenu'}>
             <div className='navbarMenuContainer'>
               <div className='navbarMobileTop'>
-                <div className='navbarMobileTopRight menuOpen'>
+                <div className='navbarMobileTopRight menuOpen' onClick={HandleHome}>
                   <img src={Logo} alt='enki connect' className='navbarLogo' />
                 </div>
                 <div className='navbarMobileTopLeft'>
