@@ -72,7 +72,6 @@ const Navbar = () => {
       email: email,
       number: number,
     }
-    console.log('ok')
 
     emailjs.send('gmail', 'template_zagnv46', value, 'H4H67FBVHrToErEI4').then(
       (result) => {
