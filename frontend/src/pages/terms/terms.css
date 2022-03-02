@@ -1,0 +1,57 @@
+.termsTitle {
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.termsText {
+  width: 100%;
+  color: white;
+  text-align: left;
+}
+
+.terms {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+}
+
+.termsMainTitle {
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.termsBold {
+  font-weight: 600;
+}
+
+.termsMainText {
+  width: 100%;
+  color: white;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.termsListContainer {
+  list-style-type: circle;
+  margin-left: 50px;
+}
+
+.termsListContainerDisc {
+  list-style-type: disc;
+  margin-left: 50px;
+}
+
+.termsExtra {
+  margin-top: 50px;
+  font-size: 24px;
+}
+
+.terms a {
+  color: blue;
+}

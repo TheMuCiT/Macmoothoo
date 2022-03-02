@@ -13,7 +13,7 @@ const About = () => {
       <div className='componentFirst'>
         <div className='componentSecondMain'>
           <Line className='Line1' />
-          <div className='contactContainer'>
+          <div className='contactContainer aboutContainer'>
             <div className='contactTitle'>About</div>
           </div>
         </div>

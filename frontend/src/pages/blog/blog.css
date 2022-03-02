@@ -159,6 +159,10 @@
   margin-left: 20px;
 }
 
+.blogBig {
+  position: relative;
+}
+
 @media only screen and (max-width: 1320px) {
   .blogWrapper {
     flex-direction: column;

@@ -32,6 +32,14 @@ const Footer = ({ history }) => {
     window.open('/FAQ', '_self')
   }
 
+  const handleTerms = () => {
+    window.open('/Terms', '_self')
+  }
+
+  const handlePrivacy = () => {
+    window.open('/Privacy', '_self')
+  }
+
   return (
     <div className='footerBC componentFirst'>
       <div className='footerMain componentSecond'>
@@ -40,7 +48,7 @@ const Footer = ({ history }) => {
             <img src={Logo} alt='' />
             Learn, Share & Earn
           </div>
-          <div className='footerMainLeftText'>Follow us with our social links</div>
+          <div className='footerMainLeftText'>Follow us on our socials</div>
           <div className='footerMainLeftLinks'>
             <MailSVG className='footerIcon' onClick={handleWhatsapp} />
             <YoutubeSVG className='footerIcon' onClick={handlePinterest} />
@@ -48,11 +56,11 @@ const Footer = ({ history }) => {
             <TwitterSVG className='footerIcon' onClick={handleTwitter} />
             <LinkedInSVG className='footerIcon' onClick={handleLinkedIn} />
           </div>
-          <div className='footerMainLeftCopy'>Ⓒ All Rights reserved 2021 Enki Connect Pty Ltd</div>
+          <div className='footerMainLeftCopy'>All Rights Reserved Ⓒ 2021 Enki Connect Pty Ltd</div>
         </div>
         <div className='footerMainRight'>
           <div className='footerMainRightItem'>
-            <div className='footerMainRightItemTitle'>Follow us</div>
+            <div className='footerMainRightItemTitle'>Follow Us</div>
             <div className='footerMainRightItemText' onClick={handlePinterest}>
               Pinterest
             </div>
@@ -60,7 +68,7 @@ const Footer = ({ history }) => {
               Instagram
             </div>
             <div className='footerMainRightItemText' onClick={handleTwitter}>
-              Twitter
+              Facebook
             </div>
             <div className='footerMainRightItemText' onClick={handleWhatsapp}>
               Whatsapp
@@ -68,11 +76,15 @@ const Footer = ({ history }) => {
           </div>
           <div className='footerMainRightItem'>
             <div className='footerMainRightItemTitle'>Legal</div>
-            <div className='footerMainRightItemText'>Terms</div>
+            <div className='footerMainRightItemText' onClick={handleTerms}>
+              Terms
+            </div>
             <div className='footerMainRightItemText' onClick={handleToFAQ}>
               FAQ's
             </div>
-            <div className='footerMainRightItemText'>Privacy</div>
+            <div className='footerMainRightItemText' onClick={handlePrivacy}>
+              Privacy
+            </div>
             <div className='footerMainRightItemText'>Support</div>
           </div>
         </div>

@@ -290,7 +290,7 @@ const FAQ = () => {
               {/**22 */}
               <div className='FAQItem'>
                 <div className='FAQItemHeader' onClick={handlerSecond}>
-                  <div className='FAQItemHeaderText'>Accessability</div>
+                  <div className='FAQItemHeaderText'>Accessibility </div>
                   <div className='FAQItemHeaderArrow'>
                     <ArrowDownSVG className={second ? 'FAQItemHeaderArrowSVGHover' : 'FAQItemHeaderArrowSVG'} />
                   </div>

@@ -8,6 +8,8 @@ import Blog from './pages/blog/Blog'
 import FAQ from './pages/faq/FAQ'
 import About from './pages/about/About'
 import Skills from './pages/skills/Skills'
+import Terms from './pages/terms/Terms'
+import Policy from './pages/policy/Policy'
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
         <Route exact path='/About' component={About} />
         <Route exact path='/FAQ' component={FAQ} />
         <Route exact path='/Skills' component={Skills} />
+        <Route exact path='/Terms' component={Terms} />
+        <Route exact path='/Privacy' component={Policy} />
         <Redirect to='/' />
       </Switch>
     </Router>
