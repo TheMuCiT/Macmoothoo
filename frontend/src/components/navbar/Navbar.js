@@ -16,6 +16,9 @@ const Navbar = () => {
   const [email, setEmail] = useState('')
   const [number, setNumber] = useState('')
 
+  const [validEmail, setValidEmail] = useState(true)
+  const [validNumber, setValidNumber] = useState(true)
+
   useEffect(() => {
     WindowChange()
   }, [])
@@ -40,12 +43,36 @@ const Navbar = () => {
 
   const handleApply = (e) => {
     e.preventDefault()
+    const emailRegex = /\S+@\S+\.\S+/
+
+    var pattern = new RegExp(/^[0-9\b]+$/)
+
+    if (pattern.test(number)) {
+      if (number.length > 5 && number.length < 12) {
+        setValidNumber(true)
+      } else {
+        setValidNumber(false)
+      }
+    } else {
+      setValidNumber(false)
+    }
+
+    if (emailRegex.test(email)) {
+      setValidEmail(true)
+    } else {
+      setValidEmail(false)
+    }
+
+    if (!validNumber || !validEmail) {
+      return
+    }
 
     const value = {
       name: name,
       email: email,
       number: number,
     }
+    console.log('ok')
 
     emailjs.send('gmail', 'template_zagnv46', value, 'H4H67FBVHrToErEI4').then(
       (result) => {
@@ -155,7 +182,7 @@ const Navbar = () => {
               <input
                 type='email'
                 placeholder='Your email address'
-                className='joinInput'
+                className={validEmail ? 'joinInput' : 'joinInput valid'}
                 value={email}
                 name='email'
                 onChange={(event) => setEmail(event.target.value)}
@@ -168,7 +195,7 @@ const Navbar = () => {
               <input
                 type='tel'
                 placeholder='Your phone number'
-                className='joinInput'
+                className={validNumber ? 'joinInput' : 'joinInput valid'}
                 name='number'
                 value={number}
                 onChange={(event) => setNumber(event.target.value)}

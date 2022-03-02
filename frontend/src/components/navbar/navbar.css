@@ -194,6 +194,10 @@
   color: white;
 }
 
+.valid {
+  border: 1px solid red;
+}
+
 .joinButton {
   width: calc(100% - 30px);
   border-radius: 8px;
