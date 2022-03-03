@@ -1,10 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import Footer from '../../components/footer/Footer'
 
 import { ReactComponent as ArrowDownSVG } from '../../icons/Arrow.svg'
 
 import './faq.css'
 const FAQ = () => {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
   const [ShowAll, setShowAll] = useState(false)
   const [first, setfirst] = useState(false)
   const [second, setsecond] = useState(false)
