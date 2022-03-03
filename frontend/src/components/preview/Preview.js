@@ -6,7 +6,7 @@ import './preview.css'
 
 const Preview = () => {
   return (
-    <div className='componentFirst contactBC'>
+    <div className='componentFirst contactBC previewScroll'>
       <div className='contact componentSecond'>
         <div className='contactContainer'>
           <div className='contactTitle'>Preview</div>
