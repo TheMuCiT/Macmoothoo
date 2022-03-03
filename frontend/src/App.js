@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Redirect, Route, Switch, hashHistory } from 'react-router-dom'
 import Navbar from './components/navbar/Navbar'
 
 import Main from './pages/main/Main'
@@ -14,7 +14,7 @@ import BlogOne from './pages/blogOne/BlogOne'
 
 const App = () => {
   return (
-    <Router>
+    <Router history={hashHistory}>
       <Navbar />
       <Switch>
         <Route exact path='/' component={Main} />
