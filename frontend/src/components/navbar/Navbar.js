@@ -120,7 +120,9 @@ const Navbar = () => {
                 <Link to='/Skills' className='navbarCenterLink opacity7' onClick={HandleMobileMenu}>
                   Skills
                 </Link>
-                <div className='navbarCenterLink navbarRightButton'>Join Now</div>
+                <div className='navbarCenterLink navbarRightButton' onClick={handleJoin}>
+                  Join Now
+                </div>
               </div>
             </div>
           </div>
@@ -160,7 +162,9 @@ const Navbar = () => {
             <Close className='joinClose' onClick={handleJoin} />
           </div>
           <img src={Logo} alt='' />
-          <div className='joinHeader'>Join Now</div>
+          <div className='joinHeader' onClick={handleJoin}>
+            Join Now
+          </div>
           <div className='joinSubHeader'>Start your learning discover today</div>
           <div className='joinInputContainer'>
             <div className='joinInputText'>Full Name</div>
