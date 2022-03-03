@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 
 import { ReactComponent as InstagramSVG } from '../../icons/Instagram.svg'
 import { ReactComponent as TwitterSVG } from '../../icons/Twitter.svg'
@@ -9,7 +10,9 @@ import { ReactComponent as MailSVG } from '../../icons/Mail.svg'
 import Logo from '../../images/Logo.png'
 
 import './footer.css'
-const Footer = ({ history }) => {
+const Footer = () => {
+  let history = useHistory()
+
   const handleInstagram = () => {
     window.open('https://instagram.com/enkiconnect?utm_medium=copy_link')
   }
@@ -29,15 +32,15 @@ const Footer = ({ history }) => {
   }
 
   const handleToFAQ = () => {
-    window.open('/FAQ', '_self')
+    history.push('/FAQ')
   }
 
   const handleTerms = () => {
-    window.open('/Terms', '_self')
+    history.push('/Terms')
   }
 
   const handlePrivacy = () => {
-    window.open('/Privacy', '_self')
+    history.push('/Privacy')
   }
 
   const handleSupport = () => {
