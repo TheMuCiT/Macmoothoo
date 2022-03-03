@@ -73,7 +73,7 @@ const Navbar = () => {
       number: number,
     }
 
-    emailjs.send('gmail', 'template_zagnv46', value, 'H4H67FBVHrToErEI4').then(
+    emailjs.send('service_09ipewl', 'template_0xqwpfm', value, 'KixEmYbZg9Fy7VdAU').then(
       (result) => {
         console.log(result.text)
       },
